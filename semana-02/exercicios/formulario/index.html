@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicios || Segunda semanna</title>
+</head>
+<body>
+  <head>
+    <h1>Exercicio de Formulário</h1>
+  </head>
+  <main>
+    <section>
+      <div>
+        <p>Crie um formulário de contato simples com campos para nome, email e uma caixa de texto para mensagens. Não é necessário implementar a funcionalidade de envio, apenas o formulário em HTML.</p>
+        <hr>
+        <form action="">
+
+          <label for="nome">Nome:</label>
+          <input type="text" placeholder="Nome completo" id="nome" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" placeholder="Email" id="email" required>
+          <br>
+          <label for="senha">Senha:</label>
+          <input type="password" placeholder="Senha" id="senha" required>
+          <br>
+          <p>Adicione uma caixa de seleção a um formulário que permite aos usuários escolher seu gênero (Masculino, Feminino, Outro).</p>
+       
+          <h2>Informe seu gênero</h2>
+          <input type="radio" name="genero" value="masculino" id="masculino">
+          <label for="masculino">Maculino</label>
+          <br>
+          <input type="radio" name="genero" value="feminino" id="feminino">
+          <label for="feminino">Feminino</label>
+          <br>
+          <input type="radio" name="genero" value="outro" id="outro">
+          <label for="outro">Outro</label>
+
+          <br><br>
+
+          <input type="submit" value="Enviar">
+
+        </form>
+        <hr>
+      </div>
+      <div>
+        <form action="">
+          <h2>Informe seu gênero</h2>
+          
+          <select name="genero" id="">
+            <option selected disabled value="">Gênero</option>
+            <option value="outro">Outro</option>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+          </select>
+          <br><br>
+
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Faço parte da AltoTech!"></textarea>
+          <br>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
